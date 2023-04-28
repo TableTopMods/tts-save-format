@@ -1,5 +1,12 @@
 /* tslint:disable */
 /** Execute `npm run generate` to regenerate **/
+/* Generated from AudioLibraryEntryState.json */
+
+export interface AudioLibraryEntryState {
+  Item1: string;
+  Item2: string;
+}
+
 /* Generated from CalculatorState.json */
 
 export interface CalculatorState {
@@ -404,6 +411,16 @@ export interface Mp3PlayerState {
   menu: unknown;
 }
 
+/* Generated from MusicPlayerState.json */
+
+export interface MusicPlayerState {
+  RepeatSong: boolean;
+  PlaylistEntry: number;
+  CurrentAudioTitle: string;
+  CurrentAudioURL: string;
+  AudioLibrary: AudioLibraryEntryState[];
+}
+
 /* Generated from ObjectState.json */
 
 export interface ObjectState {
@@ -665,7 +682,7 @@ export interface SaveState {
    */
   CameraStates?: (CameraState | null)[];
   VersionNumber: string;
-  MusicPlayer?: unknown;
+  MusicPlayer?: MusicPlayerState;
 }
 
 /* Generated from SnapPointState.json */

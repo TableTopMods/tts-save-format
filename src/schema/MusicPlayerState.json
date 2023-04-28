@@ -1,0 +1,42 @@
+{
+  "$id": "https://tts.swlegion.dev/MusicPlayerState.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+
+  "title": "MusicPlayerState",
+  "type": "object",
+
+  "properties": {
+    "RepeatSong": {
+      "type": "boolean",
+      "default": false
+    },
+    "PlaylistEntry": {
+      "type": "number",
+      "default": ""
+    },
+    "CurrentAudioTitle": {
+      "type": "string",
+      "default": ""
+    },
+    "CurrentAudioURL": {
+      "type": "string",
+      "default": ""
+    },
+    "AudioLibrary": {
+      "type": "array",
+      "items": {
+        "$ref": "./AudioLibraryEntryState.json"
+      }
+    }
+  },
+
+  "additionalProperties": false,
+
+  "required": [
+    "RepeatSong",
+    "PlaylistEntry",
+    "CurrentAudioTitle",
+    "CurrentAudioURL",
+    "AudioLibrary"
+  ]
+}

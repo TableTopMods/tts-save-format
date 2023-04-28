@@ -166,7 +166,10 @@
       "default": ""
     },
 
-    "MusicPlayer": {}
+    "MusicPlayer": {
+      "$ref": "./MusicPlayerState.json",
+      "description": "MusicPlayer"
+    }
   },
 
   "additionalProperties": false,
